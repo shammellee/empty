@@ -10,6 +10,7 @@ else
   do
     if [[ -f "$1" ]]
     then
+      pbcopy < "$1"
       > "$1"
     else
       echo "${1} is not a file"
