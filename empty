@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# vim: filetype=sh syntax=sh
+
+if [[ "$#" == 0 ]]
+then
+  echo "No file specified"
+  exit 1
+else
+  while (($#))
+  do
+    if [[ -f "$1" ]]
+    then
+      > "$1"
+    else
+      echo "${1} is not a file"
+    fi
+
+    shift
+  done
+fi

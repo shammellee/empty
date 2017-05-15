@@ -1,0 +1,9 @@
+<!-- vim: set filetype=markdown syntax=markdown: -->
+
+# Description
+Empties file contents
+
+# Usage
+```bash
+$ empty <file> [...]
+```
