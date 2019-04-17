@@ -10,7 +10,7 @@ else
   do
     if [[ -f "$1" ]]
     then
-      pbcopy < "$1"
+      which pbcopy > /dev/null && pbcopy < "$1"
       > "$1"
     else
       echo "${1} is not a file"
@@ -19,3 +19,4 @@ else
     shift
   done
 fi
+
